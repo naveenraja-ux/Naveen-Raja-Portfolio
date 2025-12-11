@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naveen Raja S | UI/UX Designer</title>
+    <meta name="description" content="Portfolio of Naveen Raja S, a product-focused UI/UX designer from Coimbatore." />
+    
+    <!-- Google Fonts: Poppins (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              accent: {
+                indigo: '#6366f1',
+                violet: '#8b5cf6',
+                fuchsia: '#d946ef',
+              }
+            },
+            animation: {
+              'blob': 'blob 10s infinite',
+              'mesh': 'mesh 20s infinite ease-in-out alternate',
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'blink': 'blink 3s infinite',
+              'bounce-gentle': 'bounceGentle 2s infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'pop-wave': 'popWave 6s ease-in-out infinite',
+              'wave-smooth': 'waveSmooth 2s ease-in-out infinite',
+              'grid-flow': 'gridFlow 40s linear infinite',
+              'spin-slow': 'spin 15s linear infinite',
+              'marquee': 'marquee 60s linear infinite',
+              'marquee-reverse': 'marqueeReverse 60s linear infinite',
+              'gradient-x': 'gradient-x 3s ease infinite',
+              'gradient-xy': 'gradient-xy 3s ease infinite',
+              'blink-caret': 'blink-caret .75s step-end infinite',
+              'shine': 'shine 1.5s ease-in-out infinite',
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+              },
+              marqueeReverse: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(0%)' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              mesh: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '25%': { transform: 'translate(100px, -50px) scale(1.2)' },
+                '50%': { transform: 'translate(-50px, 100px) scale(0.8)' },
+                '75%': { transform: 'translate(-100px, -50px) scale(1.1)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              gridFlow: {
+                '0%': { backgroundPosition: '0 0' },
+                '100%': { backgroundPosition: '40px 40px' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              blink: {
+                '0%, 100%': { transform: 'scaleY(1)' },
+                '5%': { transform: 'scaleY(0.1)' },
+                '10%': { transform: 'scaleY(1)' },
+              },
+              bounceGentle: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-5px)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              popWave: {
+                '0%': { opacity: '0', transform: 'scale(0.5) rotate(20deg) translateY(20px)' },
+                '10%': { opacity: '1', transform: 'scale(1) rotate(0deg) translateY(0)' },
+                '15%': { transform: 'rotate(-15deg)' },
+                '20%': { transform: 'rotate(10deg)' },
+                '25%': { transform: 'rotate(-15deg)' },
+                '30%': { transform: 'rotate(10deg)' },
+                '35%': { transform: 'rotate(0deg)' },
+                '80%': { opacity: '1', transform: 'scale(1) rotate(0deg) translateY(0)' },
+                '90%, 100%': { opacity: '0', transform: 'scale(0.5) rotate(20deg) translateY(20px)' },
+              },
+              waveSmooth: {
+                '0%, 100%': { transform: 'rotate(0deg)' },
+                '25%': { transform: 'rotate(15deg)' },
+                '75%': { transform: 'rotate(-10deg)' },
+              },
+              'gradient-x': {
+                '0%, 100%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'left center'
+                },
+                '50%': {
+                    'background-size': '200% 200%',
+                    'background-position': 'right center'
+                },
+              },
+              'gradient-xy': {
+                  '0%, 100%': {
+                      'background-size': '400% 400%',
+                      'background-position': 'left center'
+                  },
+                  '50%': {
+                      'background-size': '400% 400%',
+                      'background-position': 'right center'
+                  }
+              },
+              'blink-caret': {
+                'from, to': { 'border-color': 'transparent' },
+                '50%': { 'border-color': 'currentColor' },
+              },
+              shine: {
+                '100%': { left: '125%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom Scrollbar for premium feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #475569;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+      
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-slate-900 dark:bg-[#141414] dark:text-slate-100 transition-colors duration-300">
+    <div id="root"></div>
+  </body>
+</html>
